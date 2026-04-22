@@ -1,0 +1,60 @@
+name: Rolodex
+options:
+  bundleIdPrefix: co.robwan
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.10"
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    CODE_SIGNING_ALLOWED: NO
+    ENABLE_PREVIEWS: YES
+    SWIFT_EMIT_LOC_STRINGS: YES
+
+targets:
+  Rolodex:
+    type: application
+    platform: iOS
+    sources:
+      - path: Rolodex
+        excludes:
+          - "Info.plist"
+    info:
+      path: Rolodex/Info.plist
+      properties:
+        CFBundleDisplayName: Rolodex
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIRequiredDeviceCapabilities:
+          - arm64
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIStatusBarStyle: UIStatusBarStyleDefault
+        UIViewControllerBasedStatusBarAppearance: true
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        NSPhotoLibraryAddUsageDescription: "Rolodex saves your branded wallpaper to Photos so you can set it as your lock screen."
+        LSApplicationQueriesSchemes:
+          - instagram
+          - tiktok
+          - twitter
+          - linkedin
+          - whatsapp
+          - fb
+          - snapchat
+          - discord
+          - tg
+          - venmo
+          - cashapp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: co.robwan.Rolodex
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES

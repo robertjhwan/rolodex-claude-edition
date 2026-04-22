@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Rolodex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&family=Roboto:wght@400;500;700&family=Inter:wght@400;500;600;700;800&family=Rubik:wght@500;600;700&family=Montserrat:wght@600;700;800&family=Figtree:wght@500;600;700&family=Manrope:wght@600;700;800&family=Noto+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #0a0a0b; color: #fff; font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; min-height: 100vh; }
+  * { box-sizing: border-box; }
+  .stage {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 48px 24px; gap: 48px; flex-wrap: wrap;
+    background:
+      radial-gradient(1200px 700px at 20% 10%, rgba(120,90,60,0.06), transparent 60%),
+      radial-gradient(900px 600px at 80% 90%, rgba(80,60,120,0.06), transparent 60%),
+      #0a0a0b;
+  }
+  .caption {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: rgba(255,255,255,0.4); margin-top: 14px; text-align: center;
+  }
+  .device-wrap { display: flex; flex-direction: column; align-items: center; }
+  .hero {
+    font-family: "Instrument Serif", serif;
+    font-size: clamp(48px, 6vw, 84px); font-weight: 400; letter-spacing: -0.01em;
+    line-height: 1; color: #fff; margin: 0;
+  }
+  .hero em { font-style: italic; color: rgba(255,255,255,0.5); }
+  .subhero {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255,255,255,0.45); margin-top: 18px;
+  }
+  .intro { max-width: 520px; }
+  .intro p {
+    font-size: 15px; line-height: 1.55; color: rgba(255,255,255,0.6);
+    margin: 20px 0 0;
+  }
+  /* Tweaks panel */
+  #tweaks {
+    position: fixed; right: 20px; bottom: 20px; width: 280px; z-index: 1000;
+    background: rgba(20,20,22,0.92); backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,0.08); border-radius: 16px;
+    padding: 16px; color: #fff; font-size: 13px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    display: none;
+  }
+  #tweaks h3 {
+    font-family: "Instrument Serif", serif; font-weight: 400;
+    font-size: 20px; margin: 0 0 12px; letter-spacing: -0.01em;
+  }
+  #tweaks .row { display: flex; justify-content: space-between; align-items: center; margin: 10px 0; gap: 8px; }
+  #tweaks label { color: rgba(255,255,255,0.6); font-size: 12px; }
+  #tweaks select, #tweaks input[type="color"] {
+    background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px; padding: 4px 8px; font-size: 12px; font-family: inherit;
+  }
+  #tweaks button.toggle {
+    background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px; padding: 4px 10px; font-size: 12px; cursor: pointer; font-family: inherit;
+  }
+  #tweaks button.toggle.on { background: #fff; color: #000; }
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/qrcode-generator@1.4.4/qrcode.js"></script>
+
+  <script type="text/babel" src="ios-frame.jsx"></script>
+  <script type="text/babel" src="rolodex-data.jsx"></script>
+  <script type="text/babel" src="rolodex-logos.jsx"></script>
+  <script type="text/babel" src="rolodex-qr.jsx"></script>
+  <script type="text/babel" src="rolodex-cards.jsx"></script>
+  <script type="text/babel" src="rolodex-screens.jsx"></script>
+  <script type="text/babel" src="rolodex-app.jsx"></script>
+</body>
+</html>

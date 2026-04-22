@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F68DB9D394010B5A710A1D5 /* BrandCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089981B54B7A978C2156373E /* BrandCardView.swift */; };
+		11C0F67840BBAB08413F2E8B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE0123D9C38E2422BEF61C9 /* CircleButton.swift */; };
+		1B87E303E0D07939F08B21D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05F9CB158AC5503013B720A /* Assets.xcassets */; };
+		33C2369971D571C77ACBD31A /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56324D95C82F57EF27F57C90 /* AddCardView.swift */; };
+		4BB0AEC90EE68E4220CAFDEA /* PlatformLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441991831ED8259071D2417 /* PlatformLogo.swift */; };
+		55546D0426239D6911B18F79 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669661D4B87E016D9DA9C7F /* HomeView.swift */; };
+		682A2C6DF4E343C13FE659C4 /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D01E28EB512DE93157F786 /* WallpaperView.swift */; };
+		7C3C1C7697E2E83019CD5F55 /* FooterTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9293588CC3EA83AB7996408 /* FooterTile.swift */; };
+		7F9A518A7937A2CDF9824658 /* PlatformStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37624B94A894FF5CD824547 /* PlatformStyle.swift */; };
+		923D0AC54AA86847C00DB982 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BA4B35F9CDBF1ED9761CD7 /* Platform.swift */; };
+		9325BC3D6734020419E966AE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E326CD39159237194C787E1 /* OnboardingView.swift */; };
+		94F383328ECC90DDFEC46EA7 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9080326391B870279B1BD5C /* CardStore.swift */; };
+		A8BB2D5168A2DF71B0F69344 /* PresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699ACF201C5DED08BFCC2FE7 /* PresentView.swift */; };
+		B1CA1AC61B90A14A0E991022 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E7C95FB240D2AE6944C42 /* Card.swift */; };
+		BFD143FDAB77B3B06C2C7EB5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF2DADE26947E0AF8E52047 /* Fonts.swift */; };
+		CA089FEDB2B3D35CBF24E158 /* CameraControlButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A989B9ED333DFE36B88F4 /* CameraControlButtonView.swift */; };
+		CAAFDF10E8D04B1068895F7A /* CameraControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2003DC617F28CE2B29D14 /* CameraControlService.swift */; };
+		CBF02F223A086893F5814DAA /* RolodexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C52D77594742D9870464 /* RolodexApp.swift */; };
+		D83D4D6C01C1162B4553B51B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357B3B033DC0F12208EA1765 /* RootView.swift */; };
+		E384A54572DD5B745C8571CD /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0B3FC49764E57C0C80520 /* QRCodeView.swift */; };
+		E9B4F1EC177003FA4CDF6418 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07323AE82C1CC0FD2649E14 /* CardStackView.swift */; };
+		F8E0108450E559274FE9EEC5 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A2A133DB1C420B965AB1C3 /* ThemeColors.swift */; };
+		FF91807906024916CD4F3861 /* WallpaperExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91FBF08F22CAC8ACF0082DA /* WallpaperExporter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089981B54B7A978C2156373E /* BrandCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCardView.swift; sourceTree = "<group>"; };
+		2669661D4B87E016D9DA9C7F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		357B3B033DC0F12208EA1765 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		465E7C95FB240D2AE6944C42 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		49B2003DC617F28CE2B29D14 /* CameraControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlService.swift; sourceTree = "<group>"; };
+		56324D95C82F57EF27F57C90 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		699ACF201C5DED08BFCC2FE7 /* PresentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentView.swift; sourceTree = "<group>"; };
+		6CE0123D9C38E2422BEF61C9 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		75DBE5D49CDD2DC19AF0FE83 /* Rolodex.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Rolodex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8441991831ED8259071D2417 /* PlatformLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformLogo.swift; sourceTree = "<group>"; };
+		8E326CD39159237194C787E1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		90D01E28EB512DE93157F786 /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
+		A0B0B3FC49764E57C0C80520 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		A9080326391B870279B1BD5C /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
+		B05F9CB158AC5503013B720A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9293588CC3EA83AB7996408 /* FooterTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterTile.swift; sourceTree = "<group>"; };
+		BE26C52D77594742D9870464 /* RolodexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexApp.swift; sourceTree = "<group>"; };
+		C07323AE82C1CC0FD2649E14 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
+		D0A2A133DB1C420B965AB1C3 /* ThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
+		D37624B94A894FF5CD824547 /* PlatformStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformStyle.swift; sourceTree = "<group>"; };
+		DB0A989B9ED333DFE36B88F4 /* CameraControlButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlButtonView.swift; sourceTree = "<group>"; };
+		E91FBF08F22CAC8ACF0082DA /* WallpaperExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperExporter.swift; sourceTree = "<group>"; };
+		E9BA4B35F9CDBF1ED9761CD7 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
+		EAF2DADE26947E0AF8E52047 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F9AF9374165ADA24EBB495B /* Wallpaper */ = {
+			isa = PBXGroup;
+			children = (
+				90D01E28EB512DE93157F786 /* WallpaperView.swift */,
+			);
+			path = Wallpaper;
+			sourceTree = "<group>";
+		};
+		21E7F26D31548D2BBD97418E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				49B2003DC617F28CE2B29D14 /* CameraControlService.swift */,
+				E91FBF08F22CAC8ACF0082DA /* WallpaperExporter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		253C5F3B61BBAB9680ED2C90 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6CE0123D9C38E2422BEF61C9 /* CircleButton.swift */,
+				8441991831ED8259071D2417 /* PlatformLogo.swift */,
+				A0B0B3FC49764E57C0C80520 /* QRCodeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2F0094DFD9CF23D5C16BBE16 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				089981B54B7A978C2156373E /* BrandCardView.swift */,
+				C07323AE82C1CC0FD2649E14 /* CardStackView.swift */,
+				B9293588CC3EA83AB7996408 /* FooterTile.swift */,
+				2669661D4B87E016D9DA9C7F /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3717A9F21FA8EFEDAEA01393 /* Present */ = {
+			isa = PBXGroup;
+			children = (
+				699ACF201C5DED08BFCC2FE7 /* PresentView.swift */,
+			);
+			path = Present;
+			sourceTree = "<group>";
+		};
+		413E5912666778A08E931051 /* Rolodex */ = {
+			isa = PBXGroup;
+			children = (
+				B05F9CB158AC5503013B720A /* Assets.xcassets */,
+				D3B3847D3BD93B8C40A56F16 /* App */,
+				E9B56E19F3BBD94ACEA5A22C /* Models */,
+				21E7F26D31548D2BBD97418E /* Services */,
+				F3AA5B15057D87A33FAB72C7 /* Theme */,
+				EF52646E3ACDBBD2ADC89F71 /* Views */,
+			);
+			path = Rolodex;
+			sourceTree = "<group>";
+		};
+		7A4E79A90913F4C63262E3D6 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				56324D95C82F57EF27F57C90 /* AddCardView.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		C504CB35BB7CBAFBB879AA09 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				DB0A989B9ED333DFE36B88F4 /* CameraControlButtonView.swift */,
+				8E326CD39159237194C787E1 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D3B3847D3BD93B8C40A56F16 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BE26C52D77594742D9870464 /* RolodexApp.swift */,
+				357B3B033DC0F12208EA1765 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E9B56E19F3BBD94ACEA5A22C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				465E7C95FB240D2AE6944C42 /* Card.swift */,
+				A9080326391B870279B1BD5C /* CardStore.swift */,
+				E9BA4B35F9CDBF1ED9761CD7 /* Platform.swift */,
+				D37624B94A894FF5CD824547 /* PlatformStyle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB094AC915487B24E44F2879 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75DBE5D49CDD2DC19AF0FE83 /* Rolodex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF52646E3ACDBBD2ADC89F71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A4E79A90913F4C63262E3D6 /* Add */,
+				253C5F3B61BBAB9680ED2C90 /* Components */,
+				2F0094DFD9CF23D5C16BBE16 /* Home */,
+				C504CB35BB7CBAFBB879AA09 /* Onboarding */,
+				3717A9F21FA8EFEDAEA01393 /* Present */,
+				0F9AF9374165ADA24EBB495B /* Wallpaper */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2E30F76516397056A3AE066 = {
+			isa = PBXGroup;
+			children = (
+				413E5912666778A08E931051 /* Rolodex */,
+				EB094AC915487B24E44F2879 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3AA5B15057D87A33FAB72C7 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				EAF2DADE26947E0AF8E52047 /* Fonts.swift */,
+				D0A2A133DB1C420B965AB1C3 /* ThemeColors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5AEB3A75FC838E6A950474E /* Rolodex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A57471E4640B11E1CEE9BA5 /* Build configuration list for PBXNativeTarget "Rolodex" */;
+			buildPhases = (
+				982ADF601016CCADD1E7690D /* Sources */,
+				7FDF892D142F310464BC17E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rolodex;
+			packageProductDependencies = (
+			);
+			productName = Rolodex;
+			productReference = 75DBE5D49CDD2DC19AF0FE83 /* Rolodex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A9DD3F218E60C0A38EF385E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F5AEB3A75FC838E6A950474E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8ECD9AA7962DD236EDE9A48C /* Build configuration list for PBXProject "Rolodex" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F2E30F76516397056A3AE066;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EB094AC915487B24E44F2879 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5AEB3A75FC838E6A950474E /* Rolodex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FDF892D142F310464BC17E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B87E303E0D07939F08B21D9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		982ADF601016CCADD1E7690D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C2369971D571C77ACBD31A /* AddCardView.swift in Sources */,
+				0F68DB9D394010B5A710A1D5 /* BrandCardView.swift in Sources */,
+				CA089FEDB2B3D35CBF24E158 /* CameraControlButtonView.swift in Sources */,
+				CAAFDF10E8D04B1068895F7A /* CameraControlService.swift in Sources */,
+				B1CA1AC61B90A14A0E991022 /* Card.swift in Sources */,
+				E9B4F1EC177003FA4CDF6418 /* CardStackView.swift in Sources */,
+				94F383328ECC90DDFEC46EA7 /* CardStore.swift in Sources */,
+				11C0F67840BBAB08413F2E8B /* CircleButton.swift in Sources */,
+				BFD143FDAB77B3B06C2C7EB5 /* Fonts.swift in Sources */,
+				7C3C1C7697E2E83019CD5F55 /* FooterTile.swift in Sources */,
+				55546D0426239D6911B18F79 /* HomeView.swift in Sources */,
+				9325BC3D6734020419E966AE /* OnboardingView.swift in Sources */,
+				923D0AC54AA86847C00DB982 /* Platform.swift in Sources */,
+				4BB0AEC90EE68E4220CAFDEA /* PlatformLogo.swift in Sources */,
+				7F9A518A7937A2CDF9824658 /* PlatformStyle.swift in Sources */,
+				A8BB2D5168A2DF71B0F69344 /* PresentView.swift in Sources */,
+				E384A54572DD5B745C8571CD /* QRCodeView.swift in Sources */,
+				CBF02F223A086893F5814DAA /* RolodexApp.swift in Sources */,
+				D83D4D6C01C1162B4553B51B /* RootView.swift in Sources */,
+				F8E0108450E559274FE9EEC5 /* ThemeColors.swift in Sources */,
+				FF91807906024916CD4F3861 /* WallpaperExporter.swift in Sources */,
+				682A2C6DF4E343C13FE659C4 /* WallpaperView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		27ABD677D6697783D2C84BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		DCF2B886D955428FC722ED7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Rolodex/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.robwan.Rolodex;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE6A8CFF14898FC4048AEBE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Rolodex/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.robwan.Rolodex;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F6FB6B6449D5B5EF3B1EC3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A57471E4640B11E1CEE9BA5 /* Build configuration list for PBXNativeTarget "Rolodex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF2B886D955428FC722ED7A /* Debug */,
+				EE6A8CFF14898FC4048AEBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8ECD9AA7962DD236EDE9A48C /* Build configuration list for PBXProject "Rolodex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6FB6B6449D5B5EF3B1EC3A8 /* Debug */,
+				27ABD677D6697783D2C84BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A9DD3F218E60C0A38EF385E /* Project object */;
+}
