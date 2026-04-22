@@ -1,14 +1,14 @@
-# Handoff: Rolodex by Rob — QR Code Organizer iOS App
+# Handoff: Rolodex by Rob ; QR Code Organizer iOS App
 
 ## Overview
 
-**Rolodex** is a personal-brand QR code organizer for networking events. The problem: pulling up your Instagram/LinkedIn/WhatsApp/etc. QR code takes 5–10 taps inside each app, the codes live in inconsistent places (profile, settings, menu), and screenshotting them to your lock screen looks janky. Rolodex stores all your social QR codes in one flip-through deck — tap, present, scan, next.
+**Rolodex** is a personal-brand QR code organizer for networking events. The problem: pulling up your Instagram/LinkedIn/WhatsApp/etc. QR code takes 5–10 taps inside each app, the codes live in inconsistent places (profile, settings, menu), and screenshotting them to your lock screen looks janky. Rolodex stores all your social QR codes in one flip-through deck >>> tap, present, scan, next.
 
 Key UX pillars:
-1. **One-thumb present mode** — tap a card, it fills the screen with a branded QR + name.
-2. **Branded QRs** — each QR uses the platform's brand color and a center logo badge (Instagram gradient, LinkedIn blue, etc.) so the code is *recognizable from 3 feet away*.
-3. **iPhone Camera Control shortcut** — onboarding prompts the user to wire the iPhone 16 Camera Control button to launch the app, turning Rolodex into a one-squeeze physical action.
-4. **No regeneration churn** — QRs point to deep-link URLs (`instagram.com/rob.wan`, `t.me/robwan`, etc.), so changing a username updates the target without regenerating a new code/screenshot.
+1. **One-thumb present mode** ; tap a card, it fills the screen with a branded QR + name.
+2. **Branded QRs** ; each QR uses the platform's brand color and a center logo badge (Instagram gradient, LinkedIn blue, etc.) so the code is *recognizable from 3 feet away*.
+3. **iPhone Camera Control shortcut** ; onboarding prompts the user to wire the iPhone 16 Camera Control button to launch the app, turning Rolodex into a one-squeeze physical action.
+4. **No regeneration churn** ; QRs point to deep-link URLs (`instagram.com/rob.wan`, `t.me/robwan`, etc.), so changing a username updates the target without regenerating a new code/screenshot.
 
 ## About the Design Files
 
