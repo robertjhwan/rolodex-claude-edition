@@ -29,6 +29,7 @@ struct HomeView: View {
                     activeIndex: $activeIndex,
                     onSelect: { activeIndex = $0 },
                     onPresent: onPresent,
+                    onReorder: handleReorder,
                     width: 320
                 )
 
@@ -144,6 +145,18 @@ struct HomeView: View {
 
     private func cycleTheme() {
         themeRaw = theme.cycled().rawValue
+    }
+
+    private func handleReorder(from: Int, to: Int) {
+        let currentActive = activeIndex
+        store.moveCard(from: from, to: to)
+        if from == currentActive {
+            activeIndex = to
+        } else if from < currentActive && to >= currentActive {
+            activeIndex = currentActive - 1
+        } else if from > currentActive && to <= currentActive {
+            activeIndex = currentActive + 1
+        }
     }
 }
 

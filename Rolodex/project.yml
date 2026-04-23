@@ -30,7 +30,7 @@ targets:
     info:
       path: Rolodex/Info.plist
       properties:
-        CFBundleDisplayName: qcard by rob
+        CFBundleDisplayName: qard
         UILaunchScreen:
           UIColorName: LaunchBackground
         UIRequiredDeviceCapabilities:

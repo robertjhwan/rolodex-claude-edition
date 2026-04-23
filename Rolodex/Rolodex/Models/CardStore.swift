@@ -78,6 +78,18 @@ final class CardStore {
         persist()
     }
 
+    func moveCard(from source: Int, to destination: Int) {
+        guard cards.indices.contains(source),
+              destination >= 0, destination < cards.count,
+              source != destination else { return }
+        let card = cards.remove(at: source)
+        cards.insert(card, at: destination)
+        for (idx, _) in cards.enumerated() {
+            cards[idx].order = idx
+        }
+        persist()
+    }
+
     var totalScans: Int { cards.map(\.scans).reduce(0, +) }
 
     /// Card used as the networking default — most-scanned favorite, else most-scanned overall.

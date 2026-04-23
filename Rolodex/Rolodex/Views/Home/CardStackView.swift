@@ -18,14 +18,18 @@ struct CardStackView: View {
     @Binding var activeIndex: Int
     var onSelect: (Int) -> Void
     var onPresent: (Int) -> Void
+    var onReorder: (Int, Int) -> Void = { _, _ in }
     var width: CGFloat = 320
 
     @GestureState private var dragOffset: CGFloat = 0
+    @GestureState private var reorderDragY: CGFloat = 0
+    @State private var reorderingIdx: Int?
 
     private let expandedHeight:  CGFloat = 420
     private let collapsedHeight: CGFloat = 54   // tighter strip; 22pt padding + 34pt icon row fits
     private let peekAbove:       CGFloat = 22   // bottom sliver of the card above the active one
     private let peekBelow:       Int     = 2    // collapsed accordion strips below active
+    private let reorderStep:     CGFloat = 50   // drag distance per reorder step
 
     /// 24 + 480 + 2×60 = 624 pt — same footprint as the previous design.
     private var frameHeight: CGFloat {
@@ -58,6 +62,7 @@ struct CardStackView: View {
     @ViewBuilder
     private func cardLayer(idx: Int, card: Card) -> some View {
         let isActive = idx == activeIndex
+        let isReordering = reorderingIdx == idx
         // Cards below the active one collapse to a header strip.
         // Cards above (including the peek card) stay full height — the clip frame
         // hides everything above y = 0.
@@ -72,14 +77,17 @@ struct CardStackView: View {
         )
         .frame(height: slotHeight, alignment: .top)
         .clipped()
-        // Shadow only on the active card, applied after clip so it cannot bleed.
+        // Shadow only on the active card (or whichever card is being reordered),
+        // applied after clip so it cannot bleed.
         .shadow(
-            color: isActive ? .black.opacity(0.45) : .clear,
-            radius: isActive ? 22 : 0,
-            y: isActive ? 18 : 0
+            color: (isActive || isReordering) ? .black.opacity(isReordering ? 0.55 : 0.45) : .clear,
+            radius: isReordering ? 28 : (isActive ? 22 : 0),
+            y: isReordering ? 22 : (isActive ? 18 : 0)
         )
-        .offset(y: cardY(for: idx))
-        .zIndex(cardZIndex(for: idx))
+        .scaleEffect(isReordering ? 1.03 : 1.0)
+        .offset(y: cardY(for: idx) + (isReordering ? reorderDragY : 0))
+        .zIndex(isReordering ? 999 : cardZIndex(for: idx))
+        .animation(.spring(response: 0.3, dampingFraction: 0.8), value: reorderingIdx)
         .onTapGesture {
             if isActive {
                 onPresent(idx)
@@ -89,6 +97,41 @@ struct CardStackView: View {
                 }
             }
         }
+        .gesture(reorderGesture(for: idx))
+    }
+
+    // MARK: - Reorder gesture
+
+    private func reorderGesture(for idx: Int) -> some Gesture {
+        LongPressGesture(minimumDuration: 0.4)
+            .sequenced(before: DragGesture(minimumDistance: 0))
+            .updating($reorderDragY) { value, state, _ in
+                if case .second(true, let drag?) = value {
+                    state = drag.translation.height
+                }
+            }
+            .onChanged { value in
+                if case .second(true, _) = value, reorderingIdx != idx {
+                    reorderingIdx = idx
+                    #if canImport(UIKit)
+                    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                    #endif
+                }
+            }
+            .onEnded { value in
+                guard case .second(true, let drag?) = value else {
+                    reorderingIdx = nil
+                    return
+                }
+                let steps = Int((drag.translation.height / reorderStep).rounded())
+                let to = max(0, min(cards.count - 1, idx + steps))
+                reorderingIdx = nil
+                if to != idx {
+                    withAnimation(.spring(response: 0.4, dampingFraction: 0.82)) {
+                        onReorder(idx, to)
+                    }
+                }
+            }
     }
 
     // MARK: - Geometry

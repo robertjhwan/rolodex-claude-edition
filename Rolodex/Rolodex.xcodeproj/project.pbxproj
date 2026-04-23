@@ -9,45 +9,86 @@
 /* Begin PBXBuildFile section */
 		0F68DB9D394010B5A710A1D5 /* BrandCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089981B54B7A978C2156373E /* BrandCardView.swift */; };
 		11C0F67840BBAB08413F2E8B /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE0123D9C38E2422BEF61C9 /* CircleButton.swift */; };
+		165BFAD3D59DCFDAA8F30045 /* WidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F40759246D9EF41435BDE4 /* WidgetEntryView.swift */; };
 		1B87E303E0D07939F08B21D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05F9CB158AC5503013B720A /* Assets.xcassets */; };
+		27405AE5ED2A50AD1BDBCF0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05F9CB158AC5503013B720A /* Assets.xcassets */; };
 		33C2369971D571C77ACBD31A /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56324D95C82F57EF27F57C90 /* AddCardView.swift */; };
 		4BB0AEC90EE68E4220CAFDEA /* PlatformLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441991831ED8259071D2417 /* PlatformLogo.swift */; };
+		4FD5EB1614E1C3B23754707B /* RolodexWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 65AB01FD12ACF14DD62AB37C /* RolodexWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		55546D0426239D6911B18F79 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2669661D4B87E016D9DA9C7F /* HomeView.swift */; };
+		5587C224DA1EE7FF4E9E9A65 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0B3FC49764E57C0C80520 /* QRCodeView.swift */; };
 		682A2C6DF4E343C13FE659C4 /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D01E28EB512DE93157F786 /* WallpaperView.swift */; };
+		7C24C6E21853BA20A0D73A18 /* PlatformStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37624B94A894FF5CD824547 /* PlatformStyle.swift */; };
 		7C3C1C7697E2E83019CD5F55 /* FooterTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9293588CC3EA83AB7996408 /* FooterTile.swift */; };
 		7F9A518A7937A2CDF9824658 /* PlatformStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37624B94A894FF5CD824547 /* PlatformStyle.swift */; };
+		89BA1BC4B23D35A672FF54E3 /* RolodexWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7CDA46ED85C73F8CA886F /* RolodexWidgetBundle.swift */; };
 		923D0AC54AA86847C00DB982 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BA4B35F9CDBF1ED9761CD7 /* Platform.swift */; };
 		9325BC3D6734020419E966AE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E326CD39159237194C787E1 /* OnboardingView.swift */; };
 		94F383328ECC90DDFEC46EA7 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9080326391B870279B1BD5C /* CardStore.swift */; };
+		98AEF61E4D42FBA746CFA758 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF2DADE26947E0AF8E52047 /* Fonts.swift */; };
 		A8BB2D5168A2DF71B0F69344 /* PresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699ACF201C5DED08BFCC2FE7 /* PresentView.swift */; };
 		B1CA1AC61B90A14A0E991022 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E7C95FB240D2AE6944C42 /* Card.swift */; };
 		BFD143FDAB77B3B06C2C7EB5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF2DADE26947E0AF8E52047 /* Fonts.swift */; };
+		C22C0C80448B7341F41B6AE5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E7C95FB240D2AE6944C42 /* Card.swift */; };
 		CA089FEDB2B3D35CBF24E158 /* CameraControlButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A989B9ED333DFE36B88F4 /* CameraControlButtonView.swift */; };
 		CAAFDF10E8D04B1068895F7A /* CameraControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2003DC617F28CE2B29D14 /* CameraControlService.swift */; };
 		CBF02F223A086893F5814DAA /* RolodexApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C52D77594742D9870464 /* RolodexApp.swift */; };
 		D83D4D6C01C1162B4553B51B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357B3B033DC0F12208EA1765 /* RootView.swift */; };
+		D880B2754B469715EDAD9546 /* RolodexWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D96D71EF0A5858CB0BD723 /* RolodexWidget.swift */; };
 		E384A54572DD5B745C8571CD /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0B3FC49764E57C0C80520 /* QRCodeView.swift */; };
 		E9B4F1EC177003FA4CDF6418 /* CardStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07323AE82C1CC0FD2649E14 /* CardStackView.swift */; };
+		F3D6510A64AE6EE9ABE9E070 /* PlatformLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8441991831ED8259071D2417 /* PlatformLogo.swift */; };
 		F8E0108450E559274FE9EEC5 /* ThemeColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A2A133DB1C420B965AB1C3 /* ThemeColors.swift */; };
+		FCF2EEA5737381B0D586731F /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BA4B35F9CDBF1ED9761CD7 /* Platform.swift */; };
 		FF91807906024916CD4F3861 /* WallpaperExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91FBF08F22CAC8ACF0082DA /* WallpaperExporter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3BD76583F5E39F3376B82A75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A9DD3F218E60C0A38EF385E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA97AB8147F2A0F7F5681FE4;
+			remoteInfo = RolodexWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09803D403D7D409172AB6438 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4FD5EB1614E1C3B23754707B /* RolodexWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		06F40759246D9EF41435BDE4 /* WidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntryView.swift; sourceTree = "<group>"; };
 		089981B54B7A978C2156373E /* BrandCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCardView.swift; sourceTree = "<group>"; };
+		11D96D71EF0A5858CB0BD723 /* RolodexWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexWidget.swift; sourceTree = "<group>"; };
 		2669661D4B87E016D9DA9C7F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		357B3B033DC0F12208EA1765 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		465E7C95FB240D2AE6944C42 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		49B2003DC617F28CE2B29D14 /* CameraControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlService.swift; sourceTree = "<group>"; };
+		5184F51A15E1B4D919B92E26 /* Rolodex.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rolodex.entitlements; sourceTree = "<group>"; };
 		56324D95C82F57EF27F57C90 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		65AB01FD12ACF14DD62AB37C /* RolodexWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = RolodexWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		699ACF201C5DED08BFCC2FE7 /* PresentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentView.swift; sourceTree = "<group>"; };
 		6CE0123D9C38E2422BEF61C9 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		75DBE5D49CDD2DC19AF0FE83 /* Rolodex.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Rolodex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C39EE934A0B44366E32D4DC /* RolodexWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RolodexWidget.entitlements; sourceTree = "<group>"; };
 		8441991831ED8259071D2417 /* PlatformLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformLogo.swift; sourceTree = "<group>"; };
 		8E326CD39159237194C787E1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		90D01E28EB512DE93157F786 /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
 		A0B0B3FC49764E57C0C80520 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
 		A9080326391B870279B1BD5C /* CardStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStore.swift; sourceTree = "<group>"; };
 		B05F9CB158AC5503013B720A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2B7CDA46ED85C73F8CA886F /* RolodexWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexWidgetBundle.swift; sourceTree = "<group>"; };
 		B9293588CC3EA83AB7996408 /* FooterTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterTile.swift; sourceTree = "<group>"; };
 		BE26C52D77594742D9870464 /* RolodexApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexApp.swift; sourceTree = "<group>"; };
 		C07323AE82C1CC0FD2649E14 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
@@ -57,6 +98,7 @@
 		E91FBF08F22CAC8ACF0082DA /* WallpaperExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperExporter.swift; sourceTree = "<group>"; };
 		E9BA4B35F9CDBF1ED9761CD7 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
 		EAF2DADE26947E0AF8E52047 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F2853B35A3C54B1235CA43FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -66,6 +108,18 @@
 				90D01E28EB512DE93157F786 /* WallpaperView.swift */,
 			);
 			path = Wallpaper;
+			sourceTree = "<group>";
+		};
+		15DFA847C3E111DA43D6C348 /* RolodexWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F2853B35A3C54B1235CA43FE /* Info.plist */,
+				7C39EE934A0B44366E32D4DC /* RolodexWidget.entitlements */,
+				11D96D71EF0A5858CB0BD723 /* RolodexWidget.swift */,
+				B2B7CDA46ED85C73F8CA886F /* RolodexWidgetBundle.swift */,
+				06F40759246D9EF41435BDE4 /* WidgetEntryView.swift */,
+			);
+			path = RolodexWidget;
 			sourceTree = "<group>";
 		};
 		21E7F26D31548D2BBD97418E /* Services */ = {
@@ -110,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				B05F9CB158AC5503013B720A /* Assets.xcassets */,
+				5184F51A15E1B4D919B92E26 /* Rolodex.entitlements */,
 				D3B3847D3BD93B8C40A56F16 /* App */,
 				E9B56E19F3BBD94ACEA5A22C /* Models */,
 				21E7F26D31548D2BBD97418E /* Services */,
@@ -160,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				75DBE5D49CDD2DC19AF0FE83 /* Rolodex.app */,
+				65AB01FD12ACF14DD62AB37C /* RolodexWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				413E5912666778A08E931051 /* Rolodex */,
+				15DFA847C3E111DA43D6C348 /* RolodexWidget */,
 				EB094AC915487B24E44F2879 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,16 +254,36 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DA97AB8147F2A0F7F5681FE4 /* RolodexWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D01AFB626ECA3E89A164E34 /* Build configuration list for PBXNativeTarget "RolodexWidget" */;
+			buildPhases = (
+				7BF49BDCD2126E95F4A90726 /* Sources */,
+				09D46DB72F986BA104C0183D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RolodexWidget;
+			packageProductDependencies = (
+			);
+			productName = RolodexWidget;
+			productReference = 65AB01FD12ACF14DD62AB37C /* RolodexWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F5AEB3A75FC838E6A950474E /* Rolodex */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A57471E4640B11E1CEE9BA5 /* Build configuration list for PBXNativeTarget "Rolodex" */;
 			buildPhases = (
 				982ADF601016CCADD1E7690D /* Sources */,
 				7FDF892D142F310464BC17E2 /* Resources */,
+				09803D403D7D409172AB6438 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				69DAA0C422F160CA73B5E7FB /* PBXTargetDependency */,
 			);
 			name = Rolodex;
 			packageProductDependencies = (
@@ -224,6 +301,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					DA97AB8147F2A0F7F5681FE4 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
 					F5AEB3A75FC838E6A950474E = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
@@ -245,11 +326,20 @@
 			projectRoot = "";
 			targets = (
 				F5AEB3A75FC838E6A950474E /* Rolodex */,
+				DA97AB8147F2A0F7F5681FE4 /* RolodexWidget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		09D46DB72F986BA104C0183D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27405AE5ED2A50AD1BDBCF0A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FDF892D142F310464BC17E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +351,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7BF49BDCD2126E95F4A90726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C22C0C80448B7341F41B6AE5 /* Card.swift in Sources */,
+				98AEF61E4D42FBA746CFA758 /* Fonts.swift in Sources */,
+				FCF2EEA5737381B0D586731F /* Platform.swift in Sources */,
+				F3D6510A64AE6EE9ABE9E070 /* PlatformLogo.swift in Sources */,
+				7C24C6E21853BA20A0D73A18 /* PlatformStyle.swift in Sources */,
+				5587C224DA1EE7FF4E9E9A65 /* QRCodeView.swift in Sources */,
+				D880B2754B469715EDAD9546 /* RolodexWidget.swift in Sources */,
+				89BA1BC4B23D35A672FF54E3 /* RolodexWidgetBundle.swift in Sources */,
+				165BFAD3D59DCFDAA8F30045 /* WidgetEntryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		982ADF601016CCADD1E7690D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +397,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69DAA0C422F160CA73B5E7FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA97AB8147F2A0F7F5681FE4 /* RolodexWidget */;
+			targetProxy = 3BD76583F5E39F3376B82A75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		27ABD677D6697783D2C84BE7 /* Release */ = {
@@ -355,10 +469,47 @@
 			};
 			name = Release;
 		};
+		333DB8BAD7D54C485E4D6155 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RolodexWidget/RolodexWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = RolodexWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.robwan.Rolodex.Widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC4E825167FE7D4110C92B8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RolodexWidget/RolodexWidget.entitlements;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = RolodexWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.robwan.Rolodex.Widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DCF2B886D955428FC722ED7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Rolodex/Rolodex.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Rolodex/Info.plist;
@@ -378,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Rolodex/Rolodex.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Rolodex/Info.plist;
@@ -470,6 +622,15 @@
 			buildConfigurations = (
 				DCF2B886D955428FC722ED7A /* Debug */,
 				EE6A8CFF14898FC4048AEBE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3D01AFB626ECA3E89A164E34 /* Build configuration list for PBXNativeTarget "RolodexWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333DB8BAD7D54C485E4D6155 /* Debug */,
+				CC4E825167FE7D4110C92B8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
