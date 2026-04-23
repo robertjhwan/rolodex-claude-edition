@@ -25,10 +25,12 @@ targets:
       - path: Rolodex
         excludes:
           - "Info.plist"
+    dependencies:
+      - target: RolodexWidget
     info:
       path: Rolodex/Info.plist
       properties:
-        CFBundleDisplayName: Rolodex
+        CFBundleDisplayName: qcard by rob
         UILaunchScreen:
           UIColorName: LaunchBackground
         UIRequiredDeviceCapabilities:
@@ -52,9 +54,40 @@ targets:
           - tg
           - venmo
           - cashapp
+        CFBundleURLTypes:
+          - CFBundleURLSchemes:
+              - rolodex
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: co.robwan.Rolodex
         MARKETING_VERSION: "0.1.0"
         CURRENT_PROJECT_VERSION: "1"
         INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        CODE_SIGN_ENTITLEMENTS: Rolodex/Rolodex.entitlements
+
+  RolodexWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      # Widget-only sources
+      - path: RolodexWidget
+      # Shared model + rendering layer (compiled into the extension separately)
+      - path: Rolodex/Models/Card.swift
+      - path: Rolodex/Models/Platform.swift
+      - path: Rolodex/Models/PlatformStyle.swift
+      - path: Rolodex/Theme/Fonts.swift
+      - path: Rolodex/Views/Components/PlatformLogo.swift
+      - path: Rolodex/Views/Components/QRCodeView.swift
+      # Asset catalog — needed for platform logo images
+      - path: Rolodex/Assets.xcassets
+    info:
+      path: RolodexWidget/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: co.robwan.Rolodex.Widget
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_ENTITLEMENTS: RolodexWidget/RolodexWidget.entitlements

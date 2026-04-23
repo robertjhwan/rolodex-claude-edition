@@ -1,16 +1,29 @@
 import Foundation
 import Observation
+import WidgetKit
 
 @Observable
 final class CardStore {
     var cards: [Card]
 
-    private let storageKey = "rlx.cards.v1"
+    private let storageKey  = "rlx.cards.v1"
+    private let appGroupID  = "group.co.robwan.Rolodex"
+
+    /// Shared UserDefaults container for the widget extension.
+    private var sharedDefaults: UserDefaults? { UserDefaults(suiteName: appGroupID) }
 
     init() {
-        if let data = UserDefaults.standard.data(forKey: storageKey),
+        // Prefer the App Group container (widget-readable); fall back to standard
+        // for installs that pre-date the widget (migration happens on first persist()).
+        let preferred = UserDefaults(suiteName: "group.co.robwan.Rolodex") ?? .standard
+        if let data = preferred.data(forKey: storageKey),
            let decoded = try? JSONDecoder().decode([Card].self, from: data),
            !decoded.isEmpty {
+            cards = decoded.sorted { $0.order < $1.order }
+        } else if let data = UserDefaults.standard.data(forKey: storageKey),
+                  let decoded = try? JSONDecoder().decode([Card].self, from: data),
+                  !decoded.isEmpty {
+            // Migrate existing data — next persist() will write it to the group container.
             cards = decoded.sorted { $0.order < $1.order }
         } else {
             cards = Card.samples
@@ -19,7 +32,11 @@ final class CardStore {
 
     func persist() {
         guard let data = try? JSONEncoder().encode(cards) else { return }
+        // Write to both so the widget and legacy paths both stay current.
         UserDefaults.standard.set(data, forKey: storageKey)
+        sharedDefaults?.set(data, forKey: storageKey)
+        // Tell WidgetKit to refresh its timeline with the latest default card.
+        WidgetCenter.shared.reloadAllTimelines()
     }
 
     func addCard(platform: Platform, handle: String) {

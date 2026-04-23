@@ -69,6 +69,19 @@ struct RootView: View {
                 screen = .present(cardID: defaultCard.id)
             }
         }
+        // rolodex://card/<UUID>  — deep link from the home-screen widget
+        .onOpenURL { url in
+            guard url.scheme == "rolodex",
+                  url.host == "card",
+                  let uuidString = url.pathComponents.last,
+                  let cardID = UUID(uuidString: uuidString),
+                  let idx = store.cards.firstIndex(where: { $0.id == cardID })
+            else { return }
+            activeIndex = idx
+            withAnimation(.spring(response: 0.38, dampingFraction: 0.82)) {
+                screen = .present(cardID: cardID)
+            }
+        }
     }
 
     private func handleLaunchArgs() {

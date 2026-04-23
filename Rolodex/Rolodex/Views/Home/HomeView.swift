@@ -72,7 +72,7 @@ struct HomeView: View {
     @ViewBuilder
     private var topBarTitle: some View {
         ThemedVStack(spacing: 4) {
-            ThemedMonoLabel("Rolodex · Robert Wan")
+            ThemedMonoLabel("Rolodex · Rob")
             HStack(alignment: .firstTextBaseline, spacing: 6) {
                 Text("\(store.cards.count)")
                     .font(AppFont.serif(size: 36))

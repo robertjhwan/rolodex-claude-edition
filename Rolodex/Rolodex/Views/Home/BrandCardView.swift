@@ -6,6 +6,9 @@ struct BrandCardView: View {
     var width: CGFloat = 340
     var height: CGFloat = 480
     var qrSize: CGFloat = 210
+    /// Set to false when the caller manages the shadow externally (e.g. CardStackView),
+    /// so the internal shadow cannot bleed past a clipped frame.
+    var showShadow: Bool = true
 
     var body: some View {
         let platform = card.platform
@@ -48,7 +51,7 @@ struct BrandCardView: View {
         }
         .frame(width: width, height: height)
         .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
-        .shadow(color: .black.opacity(0.5), radius: 30, y: 30)
+        .shadow(color: .black.opacity(showShadow ? 0.5 : 0), radius: 30, y: 30)
         .overlay {
             RoundedRectangle(cornerRadius: 28, style: .continuous)
                 .strokeBorder(Color.white.opacity(0.08), lineWidth: 1)
