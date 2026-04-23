@@ -16,6 +16,7 @@ final class CardStore {
         // Prefer the App Group container (widget-readable); fall back to standard
         // for installs that pre-date the widget (migration happens on first persist()).
         let preferred = UserDefaults(suiteName: "group.co.robwan.Rolodex") ?? .standard
+        var needsSync = false
         if let data = preferred.data(forKey: storageKey),
            let decoded = try? JSONDecoder().decode([Card].self, from: data),
            !decoded.isEmpty {
@@ -23,11 +24,16 @@ final class CardStore {
         } else if let data = UserDefaults.standard.data(forKey: storageKey),
                   let decoded = try? JSONDecoder().decode([Card].self, from: data),
                   !decoded.isEmpty {
-            // Migrate existing data — next persist() will write it to the group container.
             cards = decoded.sorted { $0.order < $1.order }
+            // Migrate legacy standard-defaults data into the App Group container
+            // so the widget can read it on the very next timeline fetch.
+            needsSync = true
         } else {
             cards = Card.samples
+            // Seed the shared container on first launch so the widget has data.
+            needsSync = true
         }
+        if needsSync { persist() }
     }
 
     func persist() {

@@ -68,7 +68,7 @@ struct RolodexWidget: Widget {
             WidgetEntryView(entry: entry)
                 .widgetURL(deepLinkURL(for: entry.card))
         }
-        .configurationDisplayName("Rolodex Card")
+        .configurationDisplayName("qard")
         .description("Your default social card, always ready to scan.")
         .supportedFamilies([
             .systemSmall,
