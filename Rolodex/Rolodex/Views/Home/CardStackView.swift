@@ -76,7 +76,10 @@ struct CardStackView: View {
             showShadow: false
         )
         .frame(height: slotHeight, alignment: .top)
-        .clipped()
+        // Rounded clip so collapsed strips round at the bottom too — otherwise
+        // .clipped() would leave a flat cut that shows through the rounded top
+        // of the next strip below.
+        .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
         // Lift shadow while reordering only — no resting shadow, so strips below stay crisp.
         .shadow(
             color: isReordering ? .black.opacity(0.55) : .clear,
