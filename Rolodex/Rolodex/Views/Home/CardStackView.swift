@@ -30,15 +30,17 @@ struct CardStackView: View {
     @GestureState private var reorderDragY: CGFloat = 0
     @State private var reorderingIdx: Int?
 
-    private let expandedHeight:  CGFloat = 420
-    private let collapsedHeight: CGFloat = 54   // tighter strip; 22pt padding + 34pt icon row fits
+    private let expandedHeight:  CGFloat = 380  // active card; shrunk to fit 3 below + activeGap
+    private let collapsedHeight: CGFloat = 50   // tighter strip; 22pt padding + 34pt icon row fits
     private let peekAbove:       CGFloat = 22   // bottom sliver of the card above the active one
-    private let peekBelow:       Int     = 2    // collapsed accordion strips below active
+    private let peekBelow:       Int     = 3    // collapsed accordion strips below active
+    private let activeGap:       CGFloat = 10   // breathing room between active card and strip 1
     private let reorderStep:     CGFloat = 50   // drag distance per reorder step
 
-    /// 22 + 420 + 2×54 = 550 pt — unchanged from the previous design.
+    /// peekAbove + expandedHeight + activeGap + peekBelow × collapsedHeight.
+    /// 22 + 380 + 10 + 3×50 = 562 pt.
     private var frameHeight: CGFloat {
-        peekAbove + expandedHeight + CGFloat(peekBelow) * collapsedHeight
+        peekAbove + expandedHeight + activeGap + CGFloat(peekBelow) * collapsedHeight
     }
 
     var body: some View {
@@ -158,11 +160,11 @@ struct CardStackView: View {
         } else {
             // Accordion below, Wallet-style. Each card is rendered at full
             // height; only the top `collapsedHeight` pt peeks because the
-            // *next* card sits in front and covers everything below. Strip 1
-            // is flush with the active card's bottom so active's rounded
-            // bottom corners stay visible (same visual rhythm as Wallet).
+            // *next* card sits in front and covers everything below. An
+            // `activeGap` separates the active card from strip 1, giving the
+            // featured card breathing room above the stack below.
             let stepsBelow = idx - activeIndex
-            return peekAbove + expandedHeight
+            return peekAbove + expandedHeight + activeGap
                 + CGFloat(stepsBelow - 1) * collapsedHeight + drag
         }
     }
