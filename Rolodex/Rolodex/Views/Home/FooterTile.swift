@@ -16,7 +16,7 @@ struct FooterTile: View {
                 Text(label)
                     .font(.system(size: 13, weight: .semibold))
                     .foregroundStyle(t.foreground)
-                    .padding(.top, 8)
+                    .padding(.top, 4)
                 Text(sub)
                     .font(AppFont.mono(size: 9))
                     .kerning(1.4)
@@ -25,7 +25,7 @@ struct FooterTile: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.horizontal, 12)
-            .padding(.vertical, 14)
+            .padding(.vertical, 11)
             .background(t.surface, in: RoundedRectangle(cornerRadius: 16, style: .continuous))
             .overlay {
                 RoundedRectangle(cornerRadius: 16, style: .continuous)

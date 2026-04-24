@@ -37,7 +37,7 @@ struct HomeView: View {
 
                 bottomSection
                     .padding(.horizontal, 22)
-                    .padding(.bottom, 18)
+                    .padding(.bottom, 12)
             }
         }
         .providingThemeColors()
@@ -105,7 +105,7 @@ struct HomeView: View {
     }
 
     private var bottomSection: some View {
-        VStack(spacing: 20) {
+        VStack(spacing: 14) {
             pagination
             HStack(spacing: 10) {
                 FooterTile(systemImage: "arrow.right", label: "Present", sub: "Full screen") {

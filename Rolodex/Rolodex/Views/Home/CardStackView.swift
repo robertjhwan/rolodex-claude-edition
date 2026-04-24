@@ -30,7 +30,7 @@ struct CardStackView: View {
     @GestureState private var reorderDragY: CGFloat = 0
     @State private var reorderingIdx: Int?
 
-    private let expandedHeight:  CGFloat = 380  // active card; shrunk to fit 3 below + activeGap
+    private let expandedHeight:  CGFloat = 410  // active card
     private let collapsedHeight: CGFloat = 50   // tighter strip; 22pt padding + 34pt icon row fits
     private let peekAbove:       CGFloat = 22   // bottom sliver of the card above the active one
     private let peekBelow:       Int     = 3    // collapsed accordion strips below active
@@ -38,7 +38,7 @@ struct CardStackView: View {
     private let reorderStep:     CGFloat = 50   // drag distance per reorder step
 
     /// peekAbove + expandedHeight + activeGap + peekBelow × collapsedHeight.
-    /// 22 + 380 + 10 + 3×50 = 562 pt.
+    /// 22 + 410 + 10 + 3×50 = 592 pt.
     private var frameHeight: CGFloat {
         peekAbove + expandedHeight + activeGap + CGFloat(peekBelow) * collapsedHeight
     }
