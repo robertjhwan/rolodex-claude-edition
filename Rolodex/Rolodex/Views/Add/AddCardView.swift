@@ -78,7 +78,8 @@ struct AddCardView: View {
             .disabled(!canSave)
         }
         .padding(.horizontal, 20)
-        .padding(.vertical, 12)
+        .padding(.top, 22)
+        .padding(.bottom, 12)
     }
 
     private func tile(for platform: Platform) -> some View {

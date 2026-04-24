@@ -77,12 +77,11 @@ struct CardStackView: View {
         )
         .frame(height: slotHeight, alignment: .top)
         .clipped()
-        // Shadow only on the active card (or whichever card is being reordered),
-        // applied after clip so it cannot bleed.
+        // Lift shadow while reordering only — no resting shadow, so strips below stay crisp.
         .shadow(
-            color: (isActive || isReordering) ? .black.opacity(isReordering ? 0.55 : 0.45) : .clear,
-            radius: isReordering ? 28 : (isActive ? 22 : 0),
-            y: isReordering ? 22 : (isActive ? 18 : 0)
+            color: isReordering ? .black.opacity(0.55) : .clear,
+            radius: isReordering ? 28 : 0,
+            y: isReordering ? 22 : 0
         )
         .scaleEffect(isReordering ? 1.03 : 1.0)
         .offset(y: cardY(for: idx) + (isReordering ? reorderDragY : 0))
