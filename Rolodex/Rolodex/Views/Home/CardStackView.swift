@@ -2,17 +2,22 @@ import SwiftUI
 
 /// Apple-Wallet-style card stack.
 ///
-/// Frame budget (identical to the original 624 pt so HomeView layout is unaffected):
-///   peekAbove(24) + expandedHeight(480) + peekBelow(2) × collapsedHeight(60) = 624 pt
+/// Every card is rendered at its full expanded height. Below-active cards are
+/// offset so only the top ~collapsedHeight pt peeks out; the *next* card's
+/// rounded top sits in front and covers everything beneath. This matches the
+/// way Apple Wallet stacks passes — no per-card bottom clip, so strips never
+/// look "cut off" or pill-shaped.
 ///
-/// Zones inside the clip frame:
-///   y = 0 … 24          — bottom sliver of the previous card (peek-above)
-///   y = 24 … 504         — active card, full height
-///   y = 504 … 564        — first collapsed strip below
-///   y = 564 … 624        — second collapsed strip below
+/// Frame budget (unchanged so HomeView layout is unaffected):
+///   peekAbove + expandedHeight + peekBelow × collapsedHeight
 ///
-/// Shadow is applied AFTER .clipped() so it cannot bleed onto adjacent cards.
-/// BrandCardView's own shadow is disabled (showShadow: false).
+/// Z-order: active card is on top; below-active strips are layered so deeper
+/// strips sit *above* shallower ones, letting each next card cover the tail
+/// of the card it's peeking out from. Strip 1 is flush with the active card's
+/// bottom — active's rounded-bottom corners remain visible (Wallet-style).
+///
+/// BrandCardView's own shadow is disabled (showShadow: false) — distinction
+/// comes from each card's color and the stacking itself, Wallet-style.
 struct CardStackView: View {
     let cards: [Card]
     @Binding var activeIndex: Int
@@ -31,7 +36,7 @@ struct CardStackView: View {
     private let peekBelow:       Int     = 2    // collapsed accordion strips below active
     private let reorderStep:     CGFloat = 50   // drag distance per reorder step
 
-    /// 24 + 480 + 2×60 = 624 pt — same footprint as the previous design.
+    /// 22 + 420 + 2×54 = 550 pt — unchanged from the previous design.
     private var frameHeight: CGFloat {
         peekAbove + expandedHeight + CGFloat(peekBelow) * collapsedHeight
     }
@@ -63,11 +68,12 @@ struct CardStackView: View {
     private func cardLayer(idx: Int, card: Card) -> some View {
         let isActive = idx == activeIndex
         let isReordering = reorderingIdx == idx
-        // Cards below the active one collapse to a header strip.
-        // Cards above (including the peek card) stay full height — the clip frame
-        // hides everything above y = 0.
-        let slotHeight: CGFloat = idx > activeIndex ? collapsedHeight : expandedHeight
 
+        // Every card is laid out at full expanded height. For below-active
+        // cards, only the top `collapsedHeight` peeks out — the next card's
+        // rounded top sits in front and covers the rest. No per-card clip:
+        // BrandCardView already rounds its corners internally, so the bottom
+        // of each strip is simply covered by the strip below it (Wallet-style).
         BrandCardView(
             card: card,
             width: width,
@@ -75,11 +81,6 @@ struct CardStackView: View {
             qrSize: 210,
             showShadow: false
         )
-        .frame(height: slotHeight, alignment: .top)
-        // Rounded clip so collapsed strips round at the bottom too — otherwise
-        // .clipped() would leave a flat cut that shows through the rounded top
-        // of the next strip below.
-        .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
         // Lift shadow while reordering only — no resting shadow, so strips below stay crisp.
         .shadow(
             color: isReordering ? .black.opacity(0.55) : .clear,
@@ -155,16 +156,24 @@ struct CardStackView: View {
                 return -(CGFloat(stepsAbove - 1) * collapsedHeight + expandedHeight) + drag
             }
         } else {
-            // Accordion below: stepsBelow == 1 places the strip immediately under active.
+            // Accordion below, Wallet-style. Each card is rendered at full
+            // height; only the top `collapsedHeight` pt peeks because the
+            // *next* card sits in front and covers everything below. Strip 1
+            // is flush with the active card's bottom so active's rounded
+            // bottom corners stay visible (same visual rhythm as Wallet).
             let stepsBelow = idx - activeIndex
-            return peekAbove + expandedHeight + CGFloat(stepsBelow - 1) * collapsedHeight + drag
+            return peekAbove + expandedHeight
+                + CGFloat(stepsBelow - 1) * collapsedHeight + drag
         }
     }
 
     private func cardZIndex(for idx: Int) -> Double {
+        // Active sits on top. Below-active: deeper strips get *higher* z so
+        // each next card covers the one peeking out above it (Wallet-style).
+        // Above-active: always at the back — they're hidden above y = 0 anyway.
         if idx == activeIndex { return Double(cards.count + 1) }
-        if idx > activeIndex  { return Double(cards.count + 1 - (idx - activeIndex)) }
-        return Double(idx) // above cards: low z, mostly hidden
+        if idx > activeIndex  { return Double(idx - activeIndex) }
+        return -Double(cards.count - idx)
     }
 
     private var limitedDrag: CGFloat {
