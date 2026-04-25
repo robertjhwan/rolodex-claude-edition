@@ -22,12 +22,14 @@
 		7C3C1C7697E2E83019CD5F55 /* FooterTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9293588CC3EA83AB7996408 /* FooterTile.swift */; };
 		7F9A518A7937A2CDF9824658 /* PlatformStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37624B94A894FF5CD824547 /* PlatformStyle.swift */; };
 		89BA1BC4B23D35A672FF54E3 /* RolodexWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7CDA46ED85C73F8CA886F /* RolodexWidgetBundle.swift */; };
+		8BA6B72E7FFE7F5CE2A83FB3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D3DA6970C8C8C924FAD24D82 /* PrivacyInfo.xcprivacy */; };
 		923D0AC54AA86847C00DB982 /* Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BA4B35F9CDBF1ED9761CD7 /* Platform.swift */; };
 		9325BC3D6734020419E966AE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E326CD39159237194C787E1 /* OnboardingView.swift */; };
 		94F383328ECC90DDFEC46EA7 /* CardStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9080326391B870279B1BD5C /* CardStore.swift */; };
 		98AEF61E4D42FBA746CFA758 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF2DADE26947E0AF8E52047 /* Fonts.swift */; };
 		A8BB2D5168A2DF71B0F69344 /* PresentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699ACF201C5DED08BFCC2FE7 /* PresentView.swift */; };
 		B1CA1AC61B90A14A0E991022 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E7C95FB240D2AE6944C42 /* Card.swift */; };
+		BCB997B08BEF2C98243409CD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 031CF38747AB504D0B0FEA5B /* PrivacyInfo.xcprivacy */; };
 		BFD143FDAB77B3B06C2C7EB5 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF2DADE26947E0AF8E52047 /* Fonts.swift */; };
 		C22C0C80448B7341F41B6AE5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465E7C95FB240D2AE6944C42 /* Card.swift */; };
 		CA089FEDB2B3D35CBF24E158 /* CameraControlButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0A989B9ED333DFE36B88F4 /* CameraControlButtonView.swift */; };
@@ -68,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		031CF38747AB504D0B0FEA5B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		06F40759246D9EF41435BDE4 /* WidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetEntryView.swift; sourceTree = "<group>"; };
 		089981B54B7A978C2156373E /* BrandCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCardView.swift; sourceTree = "<group>"; };
 		11D96D71EF0A5858CB0BD723 /* RolodexWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolodexWidget.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 		C07323AE82C1CC0FD2649E14 /* CardStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackView.swift; sourceTree = "<group>"; };
 		D0A2A133DB1C420B965AB1C3 /* ThemeColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeColors.swift; sourceTree = "<group>"; };
 		D37624B94A894FF5CD824547 /* PlatformStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformStyle.swift; sourceTree = "<group>"; };
+		D3DA6970C8C8C924FAD24D82 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DB0A989B9ED333DFE36B88F4 /* CameraControlButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlButtonView.swift; sourceTree = "<group>"; };
 		E91FBF08F22CAC8ACF0082DA /* WallpaperExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperExporter.swift; sourceTree = "<group>"; };
 		E9BA4B35F9CDBF1ED9761CD7 /* Platform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platform.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				F2853B35A3C54B1235CA43FE /* Info.plist */,
+				031CF38747AB504D0B0FEA5B /* PrivacyInfo.xcprivacy */,
 				7C39EE934A0B44366E32D4DC /* RolodexWidget.entitlements */,
 				11D96D71EF0A5858CB0BD723 /* RolodexWidget.swift */,
 				B2B7CDA46ED85C73F8CA886F /* RolodexWidgetBundle.swift */,
@@ -164,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				B05F9CB158AC5503013B720A /* Assets.xcassets */,
+				D3DA6970C8C8C924FAD24D82 /* PrivacyInfo.xcprivacy */,
 				5184F51A15E1B4D919B92E26 /* Rolodex.entitlements */,
 				D3B3847D3BD93B8C40A56F16 /* App */,
 				E9B56E19F3BBD94ACEA5A22C /* Models */,
@@ -302,11 +308,11 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					DA97AB8147F2A0F7F5681FE4 = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 9F8FM27FQ5;
 						ProvisioningStyle = Automatic;
 					};
 					F5AEB3A75FC838E6A950474E = {
-						DevelopmentTeam = "";
+						DevelopmentTeam = 9F8FM27FQ5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -337,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27405AE5ED2A50AD1BDBCF0A /* Assets.xcassets in Resources */,
+				BCB997B08BEF2C98243409CD /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B87E303E0D07939F08B21D9 /* Assets.xcassets in Resources */,
+				8BA6B72E7FFE7F5CE2A83FB3 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,13 +448,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9F8FM27FQ5;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -458,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -475,7 +480,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = RolodexWidget/RolodexWidget.entitlements;
-				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RolodexWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,7 +487,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.robwan.Rolodex.Widget;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,7 +498,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = RolodexWidget/RolodexWidget.entitlements;
-				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = RolodexWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -502,7 +505,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.robwan.Rolodex.Widget;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Rolodex/Rolodex.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Rolodex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -522,7 +525,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.robwan.Rolodex;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,7 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Rolodex/Rolodex.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = Rolodex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -542,7 +545,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.robwan.Rolodex;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -582,13 +585,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9F8FM27FQ5;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -606,7 +606,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

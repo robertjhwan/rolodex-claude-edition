@@ -29,6 +29,8 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>instagram</string>
@@ -44,7 +46,7 @@
 		<string>cashapp</string>
 	</array>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Rolodex saves your branded wallpaper to Photos so you can set it as your lock screen.</string>
+	<string>qard saves your branded wallpaper to Photos so you can set it as your lock screen.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
